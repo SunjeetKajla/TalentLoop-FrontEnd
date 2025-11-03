@@ -16,7 +16,7 @@ export default function InterviewAnalytics({ interviewId }) {
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://localhost:8000/api/v1/interview/${interviewId}/analysis`
+        `https://talent-loop-front-end.vercel.app/api/v1/interview/${interviewId}/analysis`
       );
       setAnalysis(response.data);
     } catch (err) {
