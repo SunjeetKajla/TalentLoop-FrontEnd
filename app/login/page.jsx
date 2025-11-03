@@ -26,7 +26,7 @@ export default function LoginPage() {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:8000/mail/login', {
+      const response = await fetch('https://talentloop-backend-m2os.onrender.com/mail/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',

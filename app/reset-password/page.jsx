@@ -44,7 +44,7 @@ export default function ResetPasswordPage() {
         return;
       }
       
-      const response = await authenticatedFetch('http://localhost:8000/mail/reset-password', {
+      const response = await authenticatedFetch('https://talentloop-backend-m2os.onrender.com/mail/reset-password', {
         method: 'POST',
         body: JSON.stringify(password)
       });
